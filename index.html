@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0f" />
+  <meta name="description" content="AXION — Engineering intelligence at scale. Cloud, edge, and AI infrastructure for the next generation of software." />
+  <meta property="og:title" content="AXION — Engineering intelligence at scale" />
+  <meta property="og:description" content="Cloud, edge, and AI infrastructure for the next generation of software." />
+  <meta property="og:type" content="website" />
+
+  <title>AXION — Engineering intelligence at scale</title>
+
+  <!-- Preload critical assets -->
+  <link rel="preload" href="assets/hero-bg.webp" as="image" type="image/webp" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Favicon (inline SVG, no extra request) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236366f1'/%3E%3Cstop offset='1' stop-color='%2306b6d4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill='url(%23g)' d='M16 2 4 9v14l12 7 12-7V9L16 2zm0 4.5L24 11v10l-8 4.5L8 21V11l8-4.5z'/%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Skip link for a11y -->
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#" class="logo" aria-label="AXION home">
+        <svg class="logo__mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#6366f1"/>
+              <stop offset="1" stop-color="#06b6d4"/>
+            </linearGradient>
+          </defs>
+          <path fill="url(#logoGrad)" d="M16 2 4 9v14l12 7 12-7V9L16 2zm0 4.5L24 11v10l-8 4.5L8 21V11l8-4.5z"/>
+          <circle cx="16" cy="16" r="3" fill="url(#logoGrad)"/>
+        </svg>
+        <span class="logo__word">AXION</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#products">Products</a>
+        <a href="#features">Platform</a>
+        <a href="#stats">Customers</a>
+        <a href="#cta">Pricing</a>
+        <a href="#">Docs</a>
+        <a href="#">Company</a>
+      </nav>
+
+      <div class="nav__cta">
+        <a href="#" class="link-muted">Sign in</a>
+        <a href="#cta" class="btn btn--primary btn--sm">Get started</a>
+      </div>
+
+      <button class="nav__burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__bg-img"></div>
+        <div class="hero__bg-grid"></div>
+        <div class="hero__bg-glow"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="eyebrow reveal">
+          <span class="eyebrow__dot"></span>
+          <span>New · AXION Inference 4.0 — 3× faster, 60% lower cost</span>
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+
+        <h1 class="hero__title reveal">
+          Engineering <span class="grad-text">intelligence</span><br/>
+          at planetary scale.
+        </h1>
+
+        <p class="hero__sub reveal">
+          AXION unifies cloud, edge, and AI infrastructure into one programmable fabric.
+          Ship faster, scale globally, and run any model on any hardware — with sub-millisecond
+          latency and bank-grade security built in.
+        </p>
+
+        <div class="hero__cta reveal">
+          <a href="#cta" class="btn btn--primary btn--lg">
+            Start building free
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#features" class="btn btn--ghost btn--lg">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M6.5 5.5l4 2.5-4 2.5v-5z" fill="currentColor"/></svg>
+            Watch a 2-min demo
+          </a>
+        </div>
+
+        <div class="hero__meta reveal">
+          <span>✓ No credit card</span>
+          <span>✓ Free tier up to 10M requests</span>
+          <span>✓ SOC 2 Type II</span>
+        </div>
+      </div>
+
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- LOGO STRIP -->
+    <section class="logos">
+      <div class="container">
+        <p class="logos__label">Trusted by engineering teams at</p>
+        <div class="logos__row">
+          <span class="logo-text">LUMINA</span>
+          <span class="logo-text logo-text--italic">Northwind</span>
+          <span class="logo-text logo-text--bold">STRATA</span>
+          <span class="logo-text">Quanta</span>
+          <span class="logo-text logo-text--bold">HELIX</span>
+          <span class="logo-text logo-text--italic">Vertex</span>
+          <span class="logo-text">OBSIDIAN</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS (BENTO) -->
+    <section class="section" id="products">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow">Products</span>
+          <h2 class="section__title">One platform.<br/><span class="grad-text">Three superpowers.</span></h2>
+          <p class="section__sub">From a single API, orchestrate workloads across cloud, edge, and AI silicon — without managing any of it yourself.</p>
+        </header>
+
+        <div class="bento">
+          <article class="bento__card bento__card--xl reveal">
+            <div class="bento__media">
+              <img src="assets/product-cloud.webp" alt="AXION Cloud" width="1200" height="675" loading="lazy" decoding="async" />
+            </div>
+            <div class="bento__body">
+              <span class="tag">Cloud</span>
+              <h3>AXION Cloud</h3>
+              <p>Globally distributed compute that scales from zero to ten million RPS in under 30 seconds. Pay only for what you use, billed by the millisecond.</p>
+              <a href="#" class="link-arrow">Explore Cloud
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="bento__card reveal">
+            <div class="bento__media bento__media--square">
+              <img src="assets/product-edge.webp" alt="AXION Edge" width="1200" height="675" loading="lazy" decoding="async" />
+            </div>
+            <div class="bento__body">
+              <span class="tag">Edge</span>
+              <h3>AXION Edge</h3>
+              <p>Run code in 320+ cities. Sub-10ms cold starts, perfect for personalization, fraud, and game state.</p>
+            </div>
+          </article>
+
+          <article class="bento__card reveal">
+            <div class="bento__media bento__media--square">
+              <img src="assets/product-data.webp" alt="AXION Data" width="1200" height="675" loading="lazy" decoding="async" />
+            </div>
+            <div class="bento__body">
+              <span class="tag tag--violet">AI &amp; Data</span>
+              <h3>AXION Intelligence</h3>
+              <p>Train, fine-tune, and serve any open or proprietary model. Petabyte-scale vector store included.</p>
+            </div>
+          </article>
+
+          <article class="bento__card bento__card--stat reveal">
+            <div class="bento__stat">
+              <div class="bento__stat-num"><span data-count="99.99">0</span><span>%</span></div>
+              <div class="bento__stat-label">Uptime SLA across all regions</div>
+            </div>
+            <div class="bento__stat">
+              <div class="bento__stat-num"><span data-count="12">0</span><span>ms</span></div>
+              <div class="bento__stat-label">Median edge round-trip</div>
+            </div>
+            <div class="bento__stat">
+              <div class="bento__stat-num"><span data-count="320">0</span><span>+</span></div>
+              <div class="bento__stat-label">Points of presence worldwide</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES (ALTERNATING) -->
+    <section class="section section--features" id="features">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow">Platform</span>
+          <h2 class="section__title">Built for the next<br/><span class="grad-text">decade of software.</span></h2>
+        </header>
+
+        <div class="feature">
+          <div class="feature__media reveal">
+            <img src="assets/feature-dashboard.webp" alt="Real-time AI dashboard" width="1200" height="675" loading="lazy" decoding="async" />
+            <div class="feature__chip">Live · 0.3ms</div>
+          </div>
+          <div class="feature__body reveal">
+            <span class="tag">Real-time AI</span>
+            <h3>From query to answer in milliseconds.</h3>
+            <p>Stream events through any model with deterministic latency. Build copilots, search, and recommendations that feel instant — because they are.</p>
+            <ul class="check-list">
+              <li>Sub-100ms p99 inference</li>
+              <li>Native vector + graph + SQL</li>
+              <li>BYO model, any framework</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="feature feature--reverse">
+          <div class="feature__media reveal">
+            <img src="assets/feature-security.webp" alt="Security infrastructure" width="1200" height="1200" loading="lazy" decoding="async" />
+            <div class="feature__chip">SOC 2 · ISO 27001</div>
+          </div>
+          <div class="feature__body reveal">
+            <span class="tag">Security</span>
+            <h3>Zero-trust by default. Audited by humans.</h3>
+            <p>Customer-managed keys, confidential compute, and full audit trails. Your data never leaves its region — and we can prove it cryptographically.</p>
+            <ul class="check-list">
+              <li>End-to-end encryption</li>
+              <li>Hardware-isolated enclaves</li>
+              <li>Continuous compliance reporting</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature__media reveal">
+            <img src="assets/feature-network.webp" alt="Global network" width="1200" height="675" loading="lazy" decoding="async" />
+            <div class="feature__chip">320 POPs · 6 continents</div>
+          </div>
+          <div class="feature__body reveal">
+            <span class="tag">Global scale</span>
+            <h3>One API. Every continent. Every device.</h3>
+            <p>Deploy once, serve everywhere. Smart routing gets each request to the nearest healthy region — automatically, with no config from you.</p>
+            <ul class="check-list">
+              <li>Anycast + BGP-aware routing</li>
+              <li>Automatic failover in &lt;5s</li>
+              <li>Real-time traffic analytics</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="feature feature--reverse">
+          <div class="feature__media reveal">
+            <img src="assets/feature-speed.webp" alt="Performance" width="1200" height="1200" loading="lazy" decoding="async" />
+            <div class="feature__chip">p99 · 12ms</div>
+          </div>
+          <div class="feature__body reveal">
+            <span class="tag">Performance</span>
+            <h3>Boring-fast infrastructure.</h3>
+            <p>Custom silicon, kernel-bypass networking, and Rust runtime. The result: numbers your SREs will love and your CFO will too.</p>
+            <ul class="check-list">
+              <li>Hot paths written in Rust</li>
+              <li>Kernel-bypass for 100Gbps+</li>
+              <li>Zero-copy data plane</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats" id="stats">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stats__item reveal">
+            <div class="stats__num"><span data-count="50">0</span>+</div>
+            <div class="stats__label">Global regions</div>
+          </div>
+          <div class="stats__item reveal">
+            <div class="stats__num"><span data-count="10">0</span>B+</div>
+            <div class="stats__label">Events processed daily</div>
+          </div>
+          <div class="stats__item reveal">
+            <div class="stats__num"><span data-count="200">0</span>ms</div>
+            <div class="stats__label">p99 global latency</div>
+          </div>
+          <div class="stats__item reveal">
+            <div class="stats__num"><span data-count="12000">0</span>+</div>
+            <div class="stats__label">Engineering teams shipping</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="section section--quote">
+      <div class="container">
+        <figure class="quote reveal">
+          <svg class="quote__mark" viewBox="0 0 32 32" width="40" height="40" aria-hidden="true">
+            <path d="M10 8C5 8 2 12 2 18v6h10v-10H7c0-3 2-4 5-4V8H10zm14 0c-5 0-8 4-8 10v6h10v-10h-5c0-3 2-4 5-4V8h-2z" fill="currentColor"/>
+          </svg>
+          <blockquote>
+            We migrated 4&nbsp;billion requests a day to AXION in six weeks. Our p99 latency dropped from 1.2s to 180ms and our infra bill fell 41%. The platform team is now a profit center.
+          </blockquote>
+          <figcaption>
+            <div class="quote__avatar" aria-hidden="true">EM</div>
+            <div>
+              <div class="quote__name">Elena Marsh</div>
+              <div class="quote__role">VP Engineering, Lumina · Series D fintech</div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="cta">
+      <div class="cta__bg" aria-hidden="true">
+        <img src="assets/cta-bg.webp" alt="" loading="lazy" decoding="async" />
+        <div class="cta__bg-overlay"></div>
+      </div>
+
+      <div class="container cta__inner">
+        <h2 class="cta__title reveal">Start building in <span class="grad-text">30 seconds.</span></h2>
+        <p class="cta__sub reveal">Free tier includes 10M requests, 100GB egress, and full access to every product. No sales call required.</p>
+
+        <form class="cta__form reveal" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Check your inbox ✓';">
+          <input type="email" required placeholder="you@company.com" aria-label="Email address" />
+          <button type="submit" class="btn btn--primary btn--lg">Get started</button>
+        </form>
+
+        <p class="cta__fineprint reveal">By signing up, you agree to our terms. We'll never share your email.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="logo">
+            <svg class="logo__mark" viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+              <defs><linearGradient id="logoGrad2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366f1"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs>
+              <path fill="url(#logoGrad2)" d="M16 2 4 9v14l12 7 12-7V9L16 2zm0 4.5L24 11v10l-8 4.5L8 21V11l8-4.5z"/>
+              <circle cx="16" cy="16" r="3" fill="url(#logoGrad2)"/>
+            </svg>
+            <span class="logo__word">AXION</span>
+          </a>
+          <p class="footer__tag">Engineering intelligence at scale. Built in Singapore, deployed everywhere.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Twitter / X">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4>Product</h4>
+          <a href="#">Cloud</a>
+          <a href="#">Edge</a>
+          <a href="#">Intelligence</a>
+          <a href="#">Pricing</a>
+          <a href="#">Changelog</a>
+        </div>
+        <div class="footer__col">
+          <h4>Developers</h4>
+          <a href="#">Documentation</a>
+          <a href="#">API reference</a>
+          <a href="#">SDKs</a>
+          <a href="#">Status</a>
+          <a href="#">Community</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+          <a href="#">Customers</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Security</a>
+          <a href="#">DPA</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 AXION Technologies Pte. Ltd. All rights reserved.</p>
+        <p class="footer__status"><span class="status-dot"></span>All systems operational</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
