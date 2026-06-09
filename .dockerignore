@@ -1,0 +1,28 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# GitHub / CI
+.github
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor / IDE
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# README preview screenshots (only used by README.md, not the live site)
+assets/preview-*.png
+README.md
+
+# Docker meta (NOT nginx.conf — it's needed for the build)
+Dockerfile
+.dockerignore
+docker-compose.yml

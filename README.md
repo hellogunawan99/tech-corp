@@ -42,6 +42,16 @@ python3 -m http.server 8000
 
 Or just double-click `index.html`. It runs from the filesystem.
 
+### Or with Docker
+
+```bash
+docker build -t axion .
+docker run --rm -p 8080:8080 axion
+# open http://localhost:8080
+```
+
+The image is **~55 MB** (alpine + nginx + your 700 KB of assets), runs as the unprivileged `nginx` user on port 8080, and serves with gzip + immutable caching for static assets. Pushed to a registry it survives `kubectl apply`, ECS, Cloud Run, Fly.io, or a $4/mo VPS.
+
 ---
 
 ## What's in the box
@@ -51,15 +61,19 @@ tech-corp/
 ├── index.html          # 20 KB — semantic, accessible, no build
 ├── css/styles.css      # 24 KB — design tokens at :root
 ├── js/main.js          #  4 KB — sticky nav, reveals, counters
+├── Dockerfile          # nginx:alpine, non-root, port 8080
+├── nginx.conf          # gzip, immutable cache, security headers
+├── .dockerignore       # excludes README previews, .git, etc.
 └── assets/             #  9 WebP, 700 KB total
-    ├── preview-hero.png     # ← you are here
+    ├── preview-hero.png     # ← README only, not in Docker image
+    ├── preview-full.png     # ← README only
     ├── hero-bg.webp         #   100 KB — gradient mesh + bokeh
     ├── product-{cloud,edge,data}.webp
     ├── feature-{dashboard,security,network,speed}.webp
     └── cta-bg.webp
 ```
 
-Total: **748 KB** — including the visuals.
+Total: **748 KB** — including the visuals. Docker image: **~55 MB**.
 
 ---
 
